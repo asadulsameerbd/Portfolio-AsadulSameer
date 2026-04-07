@@ -6,7 +6,7 @@ A modern and responsive **Portfolio Website** built to showcase my projects, ski
 
 ## 🌐 Live Preview
 
-👉 [https://asadulsameerportfolio-2167f.web.app/](#) **
+👉 **https://asadulsameerportfolio-2167f.web.app/**
 
 ---
 
