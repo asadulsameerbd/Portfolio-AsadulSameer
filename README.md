@@ -9,6 +9,11 @@ A modern and responsive **Portfolio Website** built to showcase my projects, ski
 👉 **https://asadulsameerportfolio-2167f.web.app/**
 
 ---
+## 📸 Screenshots
+<img width="940" height="788" alt="Copy of Natural Mockup Freebie Lead Magnet Facebook Post (4)" src="https://github.com/user-attachments/assets/0ed217f8-18f5-4fcf-b136-cdb8197e662f" />
+
+
+---
 
 ## 📌 Features
 
@@ -96,11 +101,6 @@ cd your-repo-name
 
 ---
 
-## 📸 Screenshots
-
-*(Add your screenshots here)*
-
----
 
 ## 👨‍💻 Author
 
@@ -109,8 +109,7 @@ cd your-repo-name
 
 * 🌐 Portfolio: [*[(Add link)](https://asadulsameerportfolio-2167f.web.app/)*](https://asadulsameerportfolio-2167f.web.app/)
 * 💼 Fiverr: **https://www.fiverr.com/s/yv0wWDb**
-* 💼 Upwork: **https://www.upwork.com/freelancers/~01aacb2c638cd24d6c?mp_source=share**
-
+* 💼 Upwork: **https://www.upwork.com/freelancers/~01aacb2c638cd24d6c**
 ---
 
 ## ⭐ Support
