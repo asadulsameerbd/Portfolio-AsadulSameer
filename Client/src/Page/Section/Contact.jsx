@@ -134,7 +134,7 @@ const Contact = () => {
             </a>
 
             <a
-              href="linkedin.com/in/asadulsameer"
+              href="https://linkedin.com/in/asadulsameer"
               target="_blank"
               className="p-4 rounded-xl bg-[#0B0120] border border-[#2A1B5E] hover:border-[#5227FD]/50 hover:scale-115 transition"
             >
@@ -167,7 +167,9 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <ScrollProgress />
+      <div className="hidden md:block">
+        <ScrollProgress />
+      </div>
     </div>
   );
 };

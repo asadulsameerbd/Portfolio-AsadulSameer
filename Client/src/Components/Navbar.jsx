@@ -84,13 +84,13 @@ const Navbar = () => {
           </li>
 
           <li>
-            <a
-              href="#projects"
+            <Link
+              to="/projects"
               onClick={() => setOpen(false)}
               className="block w-full px-4 py-3 rounded-md hover:bg-[#1a1230] transition"
             >
               Projects
-            </a>
+            </Link>
           </li>
 
           <li>

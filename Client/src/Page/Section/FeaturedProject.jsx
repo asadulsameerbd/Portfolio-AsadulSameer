@@ -3,6 +3,7 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import { HiOutlineDownload } from "react-icons/hi";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router";
 
 const projects = [
   {
@@ -130,10 +131,13 @@ const FeaturedProject = () => {
 
       {/* View More button */}
       <div className="flex justify-center">
-        <button className="border border-blue-950 hover:border-[#5F4FFF] btn-soft cursor-pointer flex items-center justify-center px-2 md:px-5 py-2 rounded-sm">
+        <Link
+          to={`/projects`}
+          className="border border-blue-950 hover:border-[#5F4FFF] btn-soft cursor-pointer flex items-center justify-center px-2 md:px-5 py-2 rounded-sm"
+        >
           <HiOutlineDownload />
           View More Project
-        </button>
+        </Link>
       </div>
     </div>
   );

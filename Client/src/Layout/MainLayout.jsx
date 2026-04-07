@@ -8,8 +8,8 @@ const MainLayout = () => {
   return (
     <div>
       <Navbar />
-      <Home />
-      <div className="lg:max-w-7xl mx-auto">
+
+      <div>
         <Outlet />
       </div>
       <Footer />
