@@ -91,10 +91,7 @@ git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
 
 # Install dependencies
-npm install
 
-# Run the project
-npm run dev
 ```
 
 ---
@@ -111,8 +108,8 @@ npm run dev
 💼 Web Developer
 
 * 🌐 Portfolio: [*[(Add link)](https://asadulsameerportfolio-2167f.web.app/)*](https://asadulsameerportfolio-2167f.web.app/)
-* 💼 Fiverr: *(Add link)*
-* 💼 Upwork: *(Add link)*
+* 💼 Fiverr: **https://www.fiverr.com/s/yv0wWDb**
+* 💼 Upwork: **https://www.upwork.com/freelancers/~01aacb2c638cd24d6c?mp_source=share**
 
 ---
 
