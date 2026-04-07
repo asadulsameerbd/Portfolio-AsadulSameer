@@ -42,15 +42,15 @@ const projects = [
 
 const FeaturedProject = () => {
   useEffect(() => {
-    AOS.init({
-      duration: 1200,
-      once: true,
-      easing: "ease-in-out",
-    });
+    AOS.init({ duration: 1200, once: true });
+
+    setTimeout(() => {
+      AOS.refresh();
+    }, 500);
   }, []);
 
   return (
-    <div id="projects" className="md:py-20 px-4 bg-[#060010] text-white">
+    <div id="projects" className="pb-20 lg:py-20 px-4 bg-[#060010] text-white">
       {/* heading */}
       <p className="text-center text-sm sm:text-base text-[#D366DC]">
         Portfolio
@@ -130,7 +130,7 @@ const FeaturedProject = () => {
       </div>
 
       {/* View More button */}
-      <div className="flex justify-center">
+      <div className="flex justify-center -my-5">
         <Link
           to={`/projects`}
           className="border border-blue-950 hover:border-[#5F4FFF] btn-soft cursor-pointer flex items-center justify-center px-2 md:px-5 py-2 rounded-sm"

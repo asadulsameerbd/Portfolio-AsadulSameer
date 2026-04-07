@@ -7,7 +7,7 @@ import { TbArrowDownRhombusFilled } from "react-icons/tb";
 
 const Home = () => {
   return (
-    <div className="w-full h-145 md:h-215 relative bg-[#060010]">
+    <div className="w-full h-145 md:h-150 lg:h-200 relative bg-[#060010]">
       {/* DotGrid Background */}
       <div className="absolute inset-0">
         <DotGrid

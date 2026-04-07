@@ -167,7 +167,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="hidden md:block">
+      <div className="">
         <ScrollProgress />
       </div>
     </div>

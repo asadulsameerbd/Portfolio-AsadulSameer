@@ -1,32 +1,53 @@
-import React, { useEffect, useState } from "react";
-import me from "../../assets/me.jpg";
+import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+// skill images import
+import reactImg from "../../assets/skill/react.png";
+import jsImg from "../../assets/skill/js.webp";
+import htmlImg from "../../assets/skill/html.png";
+import tailwindImg from "../../assets/skill/tailwind.png";
+import nodeImg from "../../assets/skill/node.png";
+import mongoImg from "../../assets/skill/mongodb.png";
+import wpImg from "../../assets/skill/wordpress.png";
+import css from "../../assets/skill/css3.png";
+import express from "../../assets/skill/express.png";
+import tanstack from "../../assets/skill/tanstack.png";
+import jwt from "../../assets/skill/jwt.svg";
+import woocommerce from "../../assets/skill/woocommerce.png";
+import github from "../../assets/skill/github.png";
+import elementor from "../../assets/skill/elementor.png";
+
+// skills data
 const skills = [
-  { name: "React JS", level: 92, color: "from-blue-400 to-blue-600" },
-  { name: "JavaScript", level: 85, color: "from-yellow-400 to-yellow-600" },
-  { name: "HTML & CSS", level: 95, color: "from-orange-400 to-pink-500" },
-  { name: "Tailwind CSS", level: 92, color: "from-cyan-400 to-blue-500" },
-  { name: "Node.js", level: 75, color: "from-green-400 to-green-600" },
-  { name: "MongoDB", level: 85, color: "from-emerald-400 to-green-700" },
-  { name: "WordPress", level: 95, color: "from-indigo-400 to-indigo-700" },
+  { name: "HTML", img: htmlImg },
+  { name: "CSS", img: css },
+  { name: "JavaScript", img: jsImg },
+  { name: "Tailwind CSS", img: tailwindImg },
+  { name: "React JS", img: reactImg },
+  { name: "Node.js", img: nodeImg },
+  { name: "MongoDB", img: mongoImg },
+  { name: "WordPress", img: wpImg },
+  { name: "Express js", img: express },
+  { name: "Tanstack Query", img: tanstack },
+  { name: "jwt", img: jwt },
+  { name: "Woocommerce", img: woocommerce },
+  { name: "Github", img: github },
+  { name: "Elementor", img: elementor },
 ];
 
 const Skill = () => {
-  const [start, setStart] = useState(false);
-
   useEffect(() => {
     AOS.init({ duration: 1200, once: true });
-  }, []);
 
-  useEffect(() => {
-    setStart(true); // component load হলে animation start
+    setTimeout(() => {
+      AOS.refresh();
+    }, 500);
   }, []);
 
   return (
-    <div id="skill" className="pt-40 md:pt-0 md:mt-0">
-      <div className="w-full px-4 sm:px-6 lg:px-12 py-20 ">
+    <div id="skill" className="pt-10 md:pt-0 pb-10">
+      <div className="w-full px-4 sm:px-6 lg:px-12">
         {/* heading */}
         <p className="text-center text-sm sm:text-base text-[#D366DC]">
           Skills
@@ -39,49 +60,42 @@ const Skill = () => {
           </span>
         </h1>
 
-        {/* container */}
-        <div className="flex flex-col md:flex-row -z-50 ">
-          {/* me */}
-          <div className="flex-1 flex justify-center items-start top-10 md:top-19 relative">
-            {/* Animated ring */}
-            <div className="hidden md:block absolute w-65 h-65 top-10 sm:h-70 md:w-75 md:h-75 rounded-full border-4 border-purple-500 opacity-50 md:animate-ping"></div>
+        {/* skills grid */}
+        <div
+          data-aos="fade-up"
+          className="max-w-5xl mx-auto mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6"
+        >
+          {skills.map((skill, index) => (
+            <div
+              key={index}
+              className="
+                group
+                backdrop-blur-lg
+                bg-white/5
+                border border-white/10
+                rounded-2xl
+                p-6
+                flex flex-col items-center justify-center
+                transition-all duration-300
+                hover:bg-white/10
+                hover:scale-105
+                hover:border-purple-400/40
+                hover:shadow-[0_0_30px_rgba(168,85,247,0.4)]
+              "
+            >
+              {/* icon */}
+              <img
+                src={skill.img}
+                alt={skill.name}
+                className="w-14 h-14 object-contain mb-3 transition duration-300 group-hover:scale-110"
+              />
 
-            {/* Shadow circle */}
-            <div className="absolute w-63 h-63  sm:h-70 md:w-73 md:h-73 top-9 md:top-13 rounded-full shadow-[0_0_50px_#5227FD]"></div>
-
-            {/* Your image */}
-            <img
-              className="w-65 h-65 top-9 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full object-cover relative "
-              src={me}
-              alt="Me"
-            />
-          </div>
-
-          {/* skills */}
-          <div
-            data-aos="fade-left"
-            className="flex-1 w-full md:max-w-3xl mx-auto mt-50 md:mt-10 space-y-6"
-          >
-            {skills.map((skill, index) => (
-              <div key={index}>
-                {/* name */}
-                <div className="flex justify-between mb-2">
-                  <span className="text-white">{skill.name}</span>
-                  <span className="text-gray-400">{skill.level}%</span>
-                </div>
-
-                {/* progress */}
-                <div className="w-full h-3 bg-[#1a1230] rounded-full overflow-hidden">
-                  <div
-                    className={`h-full rounded-full bg-gradient-to-r ${skill.color} transition-all duration-1000 ease-out`}
-                    style={{
-                      width: start ? `${skill.level}%` : "0%",
-                    }}
-                  ></div>
-                </div>
-              </div>
-            ))}
-          </div>
+              {/* text */}
+              <p className="text-white text-sm tracking-wide group-hover:text-purple-300 transition">
+                {skill.name}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </div>

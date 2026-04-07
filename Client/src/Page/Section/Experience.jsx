@@ -1,8 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { FaCode, FaLaptopCode, FaWordpress } from "react-icons/fa";
 import { FcEngineering } from "react-icons/fc";
-import "aos/dist/aos.css";
-import AOS from "aos";
 
 const timelineData = [
   {
@@ -32,16 +30,9 @@ const timelineData = [
 ];
 
 const Experience = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1200,
-      once: true,
-    });
-  }, []);
-
   return (
     <div>
-      <div className="w-full px-4 sm:px-6 lg:px-12 pt-5 md:py-0 pb-20">
+      <div className="w-full px-4 sm:px-6 lg:px-12 pt-15 pb-20">
         {/* heading */}
         <p
           id="experience"
@@ -58,7 +49,7 @@ const Experience = () => {
         </h1>
 
         {/* Timeline */}
-        <div className="relative max-w-5xl mx-auto mt-12">
+        <div className="relative max-w-5xl mx-auto mt-10">
           {/* center line */}
           <div className="absolute left-1/2 top-0 w-1 h-full bg-linear-to-b from-[#5227FD] via-[#AC70DB] to-transparent transform -translate-x-1/2"></div>
 
@@ -68,8 +59,6 @@ const Experience = () => {
               className={`mb-12 flex flex-col md:flex-row items-center ${
                 index % 2 === 0 ? "md:flex-row-reverse" : ""
               }`}
-              data-aos={index % 2 === 0 ? "fade-left" : "fade-right"}
-              data-aos-delay={index * 200} // stagger effect
             >
               <div className="hidden md:block md:w-1/2"></div>
 
@@ -79,7 +68,7 @@ const Experience = () => {
               </div>
 
               {/* content */}
-              <div className="w-full md:w-1/2 mt-4 md:mt-0 px-4">
+              <div className="w-full z-10 md:w-1/2 mt-4 md:mt-0 px-4">
                 <div className="bg-[#0B0120] border border-[#2A1B5E] p-5 rounded-2xl shadow-lg hover:shadow-[#5227FD]/30 transition duration-300 hover:-translate-y-1">
                   <h2 className="text-lg font-semibold text-white flex items-center gap-2">
                     {item.icon}

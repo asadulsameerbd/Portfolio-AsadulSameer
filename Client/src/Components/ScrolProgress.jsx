@@ -30,7 +30,7 @@ const ScrollProgress = () => {
   return (
     <div
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-      className="fixed bottom-6 right-6 cursor-pointer z-50"
+      className="fixed bottom-6 right-6 cursor-pointer z-50 "
     >
       <svg width={size} height={size} className="rotate-[-90deg]">
         {/* background circle */}
