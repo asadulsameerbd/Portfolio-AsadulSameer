@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaCode } from "react-icons/fa";
 import { IoIosColorPalette } from "react-icons/io";
 import { MdElectricBolt } from "react-icons/md";
+import "aos/dist/aos.css";
+import AOS from "aos";
 
 const About = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200, // animation duration in ms
+      once: true, // animation only once
+    });
+  }, []);
   return (
     <div
+      data-aos="fade-up"
       id="about"
       className="w-full h-180 px-4 sm:px-6 lg:px-12 py-10 md:py-18 space-y-2"
     >

@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import me from "../../assets/me.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const skills = [
   { name: "React JS", level: 92, color: "from-blue-400 to-blue-600" },
@@ -15,11 +17,15 @@ const Skill = () => {
   const [start, setStart] = useState(false);
 
   useEffect(() => {
+    AOS.init({ duration: 1200, once: true });
+  }, []);
+
+  useEffect(() => {
     setStart(true); // component load হলে animation start
   }, []);
 
   return (
-    <div id="skill" className=" md:mt-0">
+    <div id="skill" className="pt-40 md:pt-0 md:mt-0">
       <div className="w-full px-4 sm:px-6 lg:px-12 py-20 ">
         {/* heading */}
         <p className="text-center text-sm sm:text-base text-[#D366DC]">
@@ -38,7 +44,7 @@ const Skill = () => {
           {/* me */}
           <div className="flex-1 flex justify-center items-start top-10 md:top-19 relative">
             {/* Animated ring */}
-            <div className="absolute w-65 h-65 top-10  sm:h-70 md:w-75 md:h-75 rounded-full border-4 border-purple-500 opacity-50 animate-ping"></div>
+            <div className="hidden md:block absolute w-65 h-65 top-10 sm:h-70 md:w-75 md:h-75 rounded-full border-4 border-purple-500 opacity-50 md:animate-ping"></div>
 
             {/* Shadow circle */}
             <div className="absolute w-63 h-63  sm:h-70 md:w-73 md:h-73 top-9 md:top-13 rounded-full shadow-[0_0_50px_#5227FD]"></div>
@@ -52,7 +58,10 @@ const Skill = () => {
           </div>
 
           {/* skills */}
-          <div className="flex-1 w-full md:max-w-3xl mx-auto mt-50 md:mt-10 space-y-6">
+          <div
+            data-aos="fade-left"
+            className="flex-1 w-full md:max-w-3xl mx-auto mt-50 md:mt-10 space-y-6"
+          >
             {skills.map((skill, index) => (
               <div key={index}>
                 {/* name */}

@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Swal from "sweetalert2";
+
 import {
   FaGithub,
   FaTwitter,
@@ -7,6 +8,8 @@ import {
   FaWhatsapp,
   FaLinkedinIn,
 } from "react-icons/fa";
+
+import ScrollProgress from "../../Components/ScrolProgress";
 
 const Contact = () => {
   const [form, setForm] = useState({
@@ -22,7 +25,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const res = await fetch("http://localhost:5000/send-email", {
+    const res = await fetch("https://server-mu-bice-23.vercel.app/send-email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -164,6 +167,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <ScrollProgress />
     </div>
   );
 };

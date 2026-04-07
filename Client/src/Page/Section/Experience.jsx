@@ -1,6 +1,8 @@
-import React from "react";
-import { FaCode, FaLaptopCode, FaWordpress, FaServer } from "react-icons/fa";
+import React, { useEffect } from "react";
+import { FaCode, FaLaptopCode, FaWordpress } from "react-icons/fa";
 import { FcEngineering } from "react-icons/fc";
+import "aos/dist/aos.css";
+import AOS from "aos";
 
 const timelineData = [
   {
@@ -30,6 +32,13 @@ const timelineData = [
 ];
 
 const Experience = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      once: true,
+    });
+  }, []);
+
   return (
     <div>
       <div className="w-full px-4 sm:px-6 lg:px-12 pt-5 md:py-0 pb-20">
@@ -59,6 +68,8 @@ const Experience = () => {
               className={`mb-12 flex flex-col md:flex-row items-center ${
                 index % 2 === 0 ? "md:flex-row-reverse" : ""
               }`}
+              data-aos={index % 2 === 0 ? "fade-left" : "fade-right"}
+              data-aos-delay={index * 200} // stagger effect
             >
               <div className="hidden md:block md:w-1/2"></div>
 
