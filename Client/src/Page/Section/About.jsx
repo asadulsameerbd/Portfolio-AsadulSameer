@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import me from "../../assets/me.jpg"; // 👈 তোমার image path
+import me from "../../assets/me.png"; // 👈 তোমার image path
 
 const About = () => {
   useEffect(() => {

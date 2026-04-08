@@ -7,6 +7,7 @@ import reactImg from "../../assets/skill/react.png";
 import jsImg from "../../assets/skill/js.webp";
 import htmlImg from "../../assets/skill/html.png";
 import tailwindImg from "../../assets/skill/tailwind.png";
+import daisy from "../../assets/skill/daisy.png";
 import nodeImg from "../../assets/skill/node.png";
 import mongoImg from "../../assets/skill/mongodb.png";
 import wpImg from "../../assets/skill/wordpress.png";
@@ -24,6 +25,7 @@ const skills = [
   { name: "CSS", img: css },
   { name: "JavaScript", img: jsImg },
   { name: "Tailwind CSS", img: tailwindImg },
+  { name: "Daisy Ui", img: daisy },
   { name: "React JS", img: reactImg },
   { name: "Node.js", img: nodeImg },
   { name: "MongoDB", img: mongoImg },
