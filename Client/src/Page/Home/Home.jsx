@@ -12,8 +12,8 @@ const Home = () => {
         <DotGrid
           dotSize={4}
           gap={18}
-          baseColor="#1f1b2e"
-          activeColor="#6C63FF"
+          baseColor="#271E37"
+          activeColor="#5227FF"
           proximity={120}
           shockRadius={250}
           shockStrength={5}
@@ -35,7 +35,7 @@ const Home = () => {
         </div>
 
         {/* Heading */}
-        <h1 className="text-3xl lg:text-6xl font-bold leading-tight max-w-4xl">
+        <h1 className="text-3xl space-grotesk lg:text-6xl font-bold leading-tight max-w-4xl">
           Hi, I'm{" "}
           <span className="bg-linear-to-r from-[#a78bfa] to-[#6366f1] bg-clip-text text-transparent">
             Asadul Sameer
@@ -86,9 +86,11 @@ const Home = () => {
           {/* Primary Button */}
           <a
             href="#projects"
-            className="px-8 py-3 mb-3 md:mb-0 rounded-lg bg-gradient-to-r from-[#6C63FF] to-[#8b5cf6] hover:opacity-90 transition font-semibold shadow-lg"
+            className="relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-mono font-medium tracking-tighter border border-white/20 hover:bg-white/10 rounded-lg group"
           >
-            View My Work
+            <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-linear-to-r from-[#260F5E] to-[#6366f1] rounded-full group-hover:w-56 group-hover:h-56"></span>
+            <span className="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-linear-to-b from-transparent via-transparent to-gray-700"></span>
+            <span className="relative">View My Work</span>
           </a>
 
           {/* Secondary Button */}

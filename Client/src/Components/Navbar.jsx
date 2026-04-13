@@ -32,10 +32,11 @@ const Navbar = () => {
             <li>
               <a href="#contact">Contact</a>
             </li>
+
             <li>
               <a
                 href="https://wa.me/8801933200699"
-                className="px-4 py-2 bg-gradient-to-r from-[#AC70DB] to-[#635BC0] rounded-lg"
+                className="px-4 py-2 bg-linear-to-r from-[#AC70DB] to-[#635BC0] rounded-lg"
               >
                 Hire Me
               </a>
@@ -118,7 +119,7 @@ const Navbar = () => {
             <a
               href="https://wa.me/8801933200699"
               onClick={() => setOpen(false)}
-              className="block w-full text-center py-3 bg-gradient-to-r from-[#AC70DB] to-[#635BC0] rounded-lg"
+              className="block w-full text-center py-3 bg-linear-to-r from-[#AC70DB] to-[#635BC0] rounded-lg hover:bg-[#151131]"
             >
               Hire Me
             </a>

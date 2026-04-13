@@ -15,6 +15,7 @@ const HomeLayout = () => {
         <Skill />
         <FeaturedProject />
         <Experience />
+
         <Contact />
       </div>
     </div>
