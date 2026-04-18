@@ -103,7 +103,7 @@ const Home = () => {
 
           {/* Resume */}
           <a
-            href="/resume.pdf"
+            href="/Client/public/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 rounded-lg border border-[#6C63FF] text-[#a78bfa] hover:bg-[#6C63FF]/10 transition flex items-center gap-2"
