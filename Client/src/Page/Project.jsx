@@ -45,6 +45,26 @@ const projectData = [
   },
   {
     id: "5",
+    title: "Ecommerce Website",
+    img: "https://i.ibb.co.com/MxsJ7MK5/Copy-of-Natural-Mockup-Freebie-Lead-Magnet-Facebook-Post.png",
+    description:
+      "This is an Ecommerce website built with WordPress, WooCommerce, Elementor, Fluent Forms and many more plugins.",
+    view: "https://almarjahan.com/",
+    video: "https://youtu.be/i-l1uo2BE8M",
+    tech: ["WordPress", "WooCommerce", "Elementor", "Fluent Forms"],
+  },
+  {
+    id: "6",
+    title: "Ecommerce Website",
+    img: "https://i.ibb.co.com/TqDCzzVX/Copy-of-Natural-Mockup-Freebie-Lead-Magnet-Facebook-Post-1.png",
+    description:
+      "This is an Ecommerce website built with WordPress, WooCommerce, Elementor, Fluent Forms and many more plugins.",
+    view: "https://drive.google.com/drive/folders/10Z3GQ3NVC76ZoUDXimwRFli8yGrHC2r-?usp=drive_link",
+    video: "",
+    tech: ["WordPress", "WooCommerce", "Elementor", "Fluent Forms"],
+  },
+  {
+    id: "7",
     title: "Portfolio Website",
     img: "https://i.ibb.co/Xrh373xL/Copy-of-Natural-Mockup-Freebie-Lead-Magnet-Facebook-Post-4.png",
     description:
@@ -55,7 +75,7 @@ const projectData = [
     tech: ["WordPress", "Elementor", "Fluent Forms"],
   },
   {
-    id: "6",
+    id: "8",
     title: "Ecommerce Website",
     img: "https://i.ibb.co/PpZ8dyn/Copy-of-Natural-Mockup-Freebie-Lead-Magnet-Facebook-Post-4.png",
     description:
@@ -66,7 +86,7 @@ const projectData = [
     tech: ["WordPress", "WooCommerce", "Elementor", "Fluent Forms"],
   },
   {
-    id: "7",
+    id: "9",
     title: "Client Ecommerce Website",
     img: "https://i.ibb.co/chJqGdrC/Copy-of-Natural-Mockup-Freebie-Lead-Magnet-Facebook-Post-4.png",
     description:
@@ -75,7 +95,7 @@ const projectData = [
     tech: ["WordPress", "WooCommerce", "Elementor"],
   },
   {
-    id: "8",
+    id: "10",
     title: "Hospital Website",
     img: "https://i.ibb.co/sd1fY7xR/Copy-of-Natural-Mockup-Freebie-Lead-Magnet-Facebook-Post-4.png",
     description:
@@ -86,7 +106,7 @@ const projectData = [
     tech: ["WordPress", "Elementor", "Fluent Forms"],
   },
   {
-    id: "9",
+    id: "11",
     title: "Portfolio Website",
     img: "https://i.ibb.co/6JT5QRZg/Copy-of-Natural-Mockup-Freebie-Lead-Magnet-Facebook-Post-4.png",
     description:
@@ -97,7 +117,7 @@ const projectData = [
     tech: ["WordPress", "Elementor", "Fluent Forms"],
   },
   {
-    id: "10",
+    id: "12",
     title: "Portfolio Website",
     img: "https://i.ibb.co/ycpX9qV4/Copy-of-Natural-Mockup-Freebie-Lead-Magnet-Facebook-Post-4.png",
     description:
